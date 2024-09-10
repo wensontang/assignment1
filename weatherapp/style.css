@@ -1,0 +1,153 @@
+/* Import Lexend Font */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap');
+
+/* General body styles */
+body {
+    font-family: 'Lexend', sans-serif; /* Changed to Lexend */
+    margin: 0;
+    background-color: #ADD8E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent overflow */
+}
+
+.app-container {
+    width: 100%; /* Use full width */
+    max-width: 414px; /* Set max-width to match iPhone XR */
+    height: 896px; /* Match height of iPhone XR */
+    background-color: #a4c2f4; /* Phone screen background color */
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative; /* To position elements like the menu */
+}
+
+/* Style for the location section */
+.location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.location-icon {
+    width: 20px; /* Adjust the size of the location icon */
+    height: auto;
+    margin-right: 8px; /* Space between the icon and the text */
+}
+
+/* Weather Info styles */
+.weather-info {
+    text-align: center;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+/* Style the sun image */
+.icon {
+    width: 220px; /* Set the sun size to 220px */
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px; /* Space between sun and chatbox */
+}
+
+/* Temperature Text (Larger) */
+.temperature {
+    font-size: 70px; /* Keep the temperature text size */
+    font-weight: bold;
+    text-align: center;
+    color: white; /* Set text color to white */
+}
+
+/* Real Feel and UV Index text */
+.additional-info {
+    font-size: 20px; /* Font size for Real Feel and UV Index */
+    color: white;
+    text-align: center;
+    margin-top: -10px; /* Bring Real Feel closer to the temperature */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center Real Feel and UV Index */
+}
+
+/* Adjusting the layout of the chatbox */
+.chatbox {
+    margin-top: 10px;
+    text-align: left; /* Align chatbox to the left */
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.chatbox-image {
+    width: 140px; /* Keep the chatbox smaller */
+    height: auto;
+    display: inline-block;
+}
+
+/* Style the graph image */
+.graph-placeholder {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.graph {
+    width: 100%; /* Make the graph take up the full width of the container */
+    height: auto;
+    border-radius: 10px; /* Optional: add rounded corners */
+}
+
+/* Sunrise and Sunset styles */
+.sun-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 16px; /* Adjust font size for better visibility */
+    color: white; /* Make sunrise/sunset info text white */
+}
+
+/* Menu Button */
+.menu-container {
+    position: absolute;
+    bottom: 30px; /* Adjust position closer to bottom */
+    left: 30px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-button {
+    width: 50px; /* Adjust the size of the menu button */
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px; /* Adjust font size for the button */
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+/* Hide menu2 image by default */
+.menu2-container {
+    display: none;
+    position: absolute;
+    bottom: 4px; /* Same position as menu button */
+    left: 17px; /* Same position as menu button */
+    transform: translate(0, 0); /* No translation needed since it overlaps exactly */
+    text-align: center;
+    z-index: 11; /* Ensure it's on top of other elements */
+}
+
+.menu2-image {
+    width: 92px; /* Match the size of the button for perfect overlap */
+    height: auto;
+}

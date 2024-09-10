@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Location -->
+        <div class="location">
+            <img src="images/location.png" alt="Location Icon" class="location-icon">
+            <span>Philadelphia, PA</span>
+        </div>
+
+        <!-- Weather Info -->
+        <div class="weather-info">
+            <div class="sun-placeholder">
+                <!-- Sun image -->
+                <img src="images/sun.png" alt="Sun" class="icon">
+            </div>
+            <!-- Chatbox image for UV warning -->
+            <div class="chatbox">
+                <img src="images/chatbox.png" alt="Chatbox with UV warning" class="chatbox-image">
+            </div>
+        </div>
+
+        <!-- Temperature, Real Feel, UV Index -->
+        <div class="temperature">
+            76°F
+        </div>
+
+        <div class="additional-info">
+            <p>Real Feel: 79°</p>
+            <p>UV Index: 7</p>
+        </div>
+
+        <!-- Graph Placeholder -->
+        <div class="graph-placeholder">
+            <img src="images/graph.png" alt="Temperature and Humidity Graph" class="graph">
+        </div>
+
+        <!-- Sunrise and Sunset -->
+        <div class="sun-info">
+            <span>Sunrise: 6:32am</span>
+            <span>Sunset: 7:15pm</span>
+        </div>
+
+        <!-- Menu Button and Menu2 -->
+        <div class="menu-container">
+            <div class="menu-button" id="menuButton" onclick="toggleMenu()">
+                &#9776; <!-- Main Menu Button -->
+            </div>
+            <div class="menu2-container" id="menu2">
+                <img src="images/menu2.png" alt="Menu 2" class="menu2-image" id="menu2Image" onclick="hideMenu()">
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
